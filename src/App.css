@@ -2,34 +2,11 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
   background-color: goldenrod;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
-
-
-.loginInput {
-  
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  
-}
-
-.loginButton {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
 
 .section {
   width: 45%;
@@ -88,16 +65,26 @@ body {
   margin-right: 10px;
 }
 
+
 .button:hover {
   background-color: #0056b3;
 }
 
-.input {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
+.logoutButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
 }
+
+
+.logoutButton:hover {
+  background-color: #0056b3;
+}
+
 
 
 .loginContainer {
@@ -207,4 +194,77 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .section, .section1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section, .section1 {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    margin-top: 20%;
+    width: 250px;
+  }
+
+  .quoteText {
+    font-size: 14px;
+  }
+
+  .quoteAuthor {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .logoutButton {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section, .section1 {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .loginContainer {
+    margin-top: 10%;
+    width: 220px;
+  }
+
+  .quoteText {
+    font-size: 12px;
+  }
+
+  .quoteAuthor {
+    font-size: 10px;
+  }
+
+  .button {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .logoutButton {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
 }

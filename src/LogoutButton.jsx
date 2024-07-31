@@ -6,7 +6,7 @@ const LogoutButton = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('username');
-    localStorage.removeItem('password'); // Optional: Remove password if stored
+    localStorage.removeItem('password'); 
     navigate('/');
   };
 

@@ -9,13 +9,13 @@ const SignIn = () => {
 
   const handleLogin = () => {
     // Generate a unique user ID based on the username
-    const userId = username; // For simplicity, using the username as userID. This can be replaced with a more complex ID if needed.
+    const userId = username; 
 
     // Save user details in localStorage
     localStorage.setItem('userId', userId);
     localStorage.setItem('username', username);
     localStorage.setItem('password', password); // Optional: Store password if necessary
-    navigate(`/home/${userId}`);
+    navigate(`/quotes/${userId}`);
   };
 
   return (

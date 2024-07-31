@@ -37,11 +37,21 @@ const Home = () => {
   };
 
   return (
-    <div className="container">
+    <div className='grid-container'>
+
+
+<div className="container">
       <RandomQuote onSaveQuote={saveQuote} />
       <SavedQuotes savedQuotes={savedQuotes} onDeleteQuote={deleteQuote} onEditQuote={editQuote} />
-      <LogoutButton />
+      
     </div>
+    <div>
+    <LogoutButton />
+
+
+    </div>
+          </div>
+    
   );
 };
 

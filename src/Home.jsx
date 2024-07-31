@@ -19,11 +19,18 @@ const Home = () => {
     localStorage.setItem(`savedQuotes_${userId}`, JSON.stringify(newSavedQuotes));
   };
 
+  // const deleteQuote = (index) => {
+  //   const newSavedQuotes = savedQuotes.filter((_, i) => i !== index);
+  //   setSavedQuotes(newSavedQuotes);
+  //   localStorage.setItem(`savedQuotes_${userId}`, JSON.stringify(newSavedQuotes));
+  // };
   const deleteQuote = (index) => {
-    const newSavedQuotes = savedQuotes.filter((_, i) => i !== index);
+    const isNotIndex = (_, i) => i !== index;
+    const newSavedQuotes = savedQuotes.filter(isNotIndex);
     setSavedQuotes(newSavedQuotes);
     localStorage.setItem(`savedQuotes_${userId}`, JSON.stringify(newSavedQuotes));
   };
+  
 
   const editQuote = (index, newText) => {
     const newSavedQuotes = savedQuotes.map((quote, i) => {

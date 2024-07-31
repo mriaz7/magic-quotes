@@ -46,7 +46,7 @@ body {
 
 .section1 {
   width: 45%;
-  background-color: #5b6c79;
+  background-color:#758694;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -150,6 +150,46 @@ h2{
 
 
 
+.signupContainer {
+  background-color:#405D72;;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin-top: 30% }
+
+.signupContainer h1 {
+  margin-bottom: 20px;
+  color: #faf6f6;
+}
+.signupInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.signupButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #73b0e1;
+
+  border: none;
+  border-radius: 4px;
+  color: rgb(15, 14, 14);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background-color: #cbbdb4;
+
+}
+
+
 .section {
   margin: 0 20px;
   width: 45%;
@@ -164,9 +204,9 @@ h2 {
 .quote {
   margin: 10px 0;
   padding: 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #070707;
   border-radius: 4px;
-  background-color: #FFF8F3;
+  background-color: wheat
 }
 
 .quoteText {
